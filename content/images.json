@@ -1,0 +1,140 @@
+{
+  "slots": [
+    {
+      "id": "hero-exterior",
+      "alt": "Café Vanah lime-washed cottage exterior with sloped dark tiled roof, painted Devanagari wordmark, and lush garden foliage",
+      "description": "White cottage, dark tiled roof, वनः on wall, greenery",
+      "aspect": "16:9 desktop / 4:5 mobile crop",
+      "aspectRatio": "16/9",
+      "priority": true
+    },
+    {
+      "id": "signage-vanah",
+      "alt": "VANAH white plinth signage with surrounding planters",
+      "description": "VANAH plinth with plants",
+      "aspect": "4:5",
+      "aspectRatio": "4/5",
+      "priority": false
+    },
+    {
+      "id": "fountain-buddha",
+      "alt": "Sandstone Buddha water fountain nestled among large tropical leaves",
+      "description": "Sandstone Buddha fountain in leaves",
+      "aspect": "3:4",
+      "aspectRatio": "3/4",
+      "priority": false
+    },
+    {
+      "id": "garden-pergola",
+      "alt": "Outdoor garden dining under dark metal pergola with trees overhead and wooden chairs",
+      "description": "Outdoor seating under the metal pergola, trees",
+      "aspect": "3:2",
+      "aspectRatio": "3/2",
+      "priority": false
+    },
+    {
+      "id": "interior-main",
+      "alt": "Sunlit interior with lime-washed plaster walls, oatmeal upholstered chairs, natural wood and lush indoor plants",
+      "description": "Beige chairs, wood, plants, daylight",
+      "aspect": "3:2",
+      "aspectRatio": "3/2",
+      "priority": false
+    },
+    {
+      "id": "table-placemat",
+      "alt": "Signature Vanah table setting: grey-veined marble table, deep sage green placemat with white line art, and handmade off-white stoneware cup",
+      "description": "Marble table, sage placemat, stoneware cups",
+      "aspect": "4:5",
+      "aspectRatio": "4/5",
+      "priority": false
+    },
+    {
+      "id": "latte-vanah",
+      "alt": "Close-up of Café Vanah cappuccino with the wordmark वनः stencilled in dark cocoa on velvety milk foam",
+      "description": "Cappuccino with वनः cocoa stencil, top-down/close",
+      "aspect": "1:1",
+      "aspectRatio": "1/1",
+      "priority": false
+    },
+    {
+      "id": "bake-poundcake",
+      "alt": "Golden pound cake slice served alongside freshly brewed artisanal coffee on ceramic plate",
+      "description": "Pound cake slice with coffee",
+      "aspect": "4:5",
+      "aspectRatio": "4/5",
+      "priority": false
+    },
+    {
+      "id": "dish-ravioli",
+      "alt": "Delicate handmade ravioli in pale cream sauce garnished with tender nasturtium leaves on wide off-white ceramic plate",
+      "description": "Ravioli in cream with nasturtium",
+      "aspect": "4:5",
+      "aspectRatio": "4/5",
+      "priority": false
+    },
+    {
+      "id": "dish-guacamole",
+      "alt": "Artfully stacked guacamole tower with crisp house tostadas",
+      "description": "Guacamole tower",
+      "aspect": "4:5",
+      "aspectRatio": "4/5",
+      "priority": false
+    },
+    {
+      "id": "dish-squash",
+      "alt": "Roasted seasonal squash with herb emulsion and toasted seeds",
+      "description": "Squash dish",
+      "aspect": "4:5",
+      "aspectRatio": "4/5",
+      "priority": false
+    },
+    {
+      "id": "dish-salad",
+      "alt": "Composed farm salad dressed over a vibrant spiced orange reduction on artisanal plate",
+      "description": "Composed salad over orange sauce",
+      "aspect": "4:5",
+      "aspectRatio": "4/5",
+      "priority": false
+    },
+    {
+      "id": "dish-entremet",
+      "alt": "Glossy chocolate entremet with halved fresh strawberries and cocoa crumb",
+      "description": "Chocolate entremet with strawberries",
+      "aspect": "4:5",
+      "aspectRatio": "4/5",
+      "priority": false
+    },
+    {
+      "id": "dish-cheesecake",
+      "alt": "Rich cookie dough cheesecake baked in-house with buttery crust",
+      "description": "Cookie dough cheesecake",
+      "aspect": "4:5",
+      "aspectRatio": "4/5",
+      "priority": false
+    },
+    {
+      "id": "drink-guava",
+      "alt": "Chilled pink guava cooler with fresh lime wheel and sea salt rim",
+      "description": "Pink guava cooler / lime drink",
+      "aspect": "4:5",
+      "aspectRatio": "4/5",
+      "priority": false
+    },
+    {
+      "id": "private-dining",
+      "alt": "Private dining room at Café Vanah for intimate celebrations, work dinners and gatherings",
+      "description": "Private dining room",
+      "aspect": "3:2",
+      "aspectRatio": "3/2",
+      "priority": false
+    },
+    {
+      "id": "og-image",
+      "alt": "Café Vanah (वनः) — Pure Vegetarian Café, Bakehouse and Conscious Dining in Aundh, Pune",
+      "description": "Exterior or latte, 1200×630",
+      "aspect": "1.91:1",
+      "aspectRatio": "1200/630",
+      "priority": false
+    }
+  ]
+}

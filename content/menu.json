@@ -1,0 +1,145 @@
+{
+  "notice": "// TODO(owner): Full menu with prices to be confirmed. Prices are set to null until verified to avoid inventing numbers.",
+  "categories": [
+    {
+      "id": "coffee",
+      "name": "Crafted Coffee",
+      "note": "Specialty beans roasted for balanced sweetness and botanical clarity",
+      "items": [
+        {
+          "name": "Vanah Cappuccino",
+          "description": "Double espresso with textured steamed milk, stencilled with the वनः mark in pure dark cocoa",
+          "price": null,
+          "veg": true,
+          "vegan": false,
+          "signature": true
+        },
+        {
+          "name": "Velvet Flat White",
+          "description": "Short double ristretto folded with silky whole milk microfoam",
+          "price": null,
+          "veg": true,
+          "vegan": false,
+          "signature": false
+        },
+        {
+          "name": "Cold Brew Botanical Tonic",
+          "description": "18-hour cold steeped single estate coffee over botanical tonic and burnt orange peel",
+          "price": null,
+          "veg": true,
+          "vegan": true,
+          "signature": true
+        },
+        {
+          "name": "Cortado",
+          "description": "Equal parts espresso and warm milk served in warm ceramic glass",
+          "price": null,
+          "veg": true,
+          "vegan": false,
+          "signature": false
+        }
+      ]
+    },
+    {
+      "id": "bakehouse",
+      "name": "Artisanal Bakehouse",
+      "note": "Fresh from our stone hearth every morning at 8:00 AM",
+      "items": [
+        {
+          "name": "Almond Pound Cake Slice",
+          "description": "Buttery crumb scented with bitter almond and Meyer lemon zest, baked daily",
+          "price": null,
+          "veg": true,
+          "vegan": false,
+          "signature": false
+        },
+        {
+          "name": "Cookie Dough Cheesecake",
+          "description": "Slow-baked rich cream cheese infused with brown butter chocolate chip dough",
+          "price": null,
+          "veg": true,
+          "vegan": false,
+          "signature": true
+        },
+        {
+          "name": "Chocolate Strawberry Entremet",
+          "description": "Mirror glazed dark chocolate dome with farm strawberry compote",
+          "price": null,
+          "veg": true,
+          "vegan": false,
+          "signature": true
+        },
+        {
+          "name": "Sourdough Toast with Cultured Butter",
+          "description": "Naturally fermented country loaf toasted with hand-churned salted butter",
+          "price": null,
+          "veg": true,
+          "vegan": false,
+          "signature": false
+        }
+      ]
+    },
+    {
+      "id": "kitchen",
+      "name": "Conscious Kitchen",
+      "note": "Pure vegetarian, seasonal produce and clean modern Indian plates",
+      "items": [
+        {
+          "name": "Handmade Herb Ravioli",
+          "description": "Ricotta and garden greens folded in silk pasta sheets, pale parmesan cream, nasturtium",
+          "price": null,
+          "veg": true,
+          "vegan": false,
+          "signature": true
+        },
+        {
+          "name": "Crisp Kothimbir Kalari",
+          "description": "Seared artisanal Himalayan kalari cheese, coriander and mint emulsion, pickled shallots",
+          "price": null,
+          "veg": true,
+          "vegan": false,
+          "signature": true
+        },
+        {
+          "name": "Stacked Guacamole Tower",
+          "description": "Hass avocado whipped with sea salt, heirloom tomato salsa, house tostadas",
+          "price": null,
+          "veg": true,
+          "vegan": true,
+          "signature": false
+        },
+        {
+          "name": "Slow-Roasted Butternut Squash",
+          "description": "Caramelized squash over charred leek purée, roasted pumpkin seed crumble",
+          "price": null,
+          "veg": true,
+          "vegan": true,
+          "signature": false
+        }
+      ]
+    },
+    {
+      "id": "coolers",
+      "name": "Botanical Coolers",
+      "note": "Infused in-house with garden herbs and seasonal fruit presses",
+      "items": [
+        {
+          "name": "Pink Guava & Sea Salt Cooler",
+          "description": "Ripe pink guava purée, freshly squeezed lime, pink Himalayan salt, sparkling mineral water",
+          "price": null,
+          "veg": true,
+          "vegan": true,
+          "signature": true
+        },
+        {
+          "name": "Garden Lemongrass Soda",
+          "description": "Cold-pressed lemongrass stalk, makrut lime leaf syrup, crushed ice",
+          "price": null,
+          "veg": true,
+          "vegan": true,
+          "signature": false
+        }
+      ]
+    }
+  ]
+}

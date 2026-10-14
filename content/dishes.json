@@ -1,0 +1,58 @@
+{
+  "dishes": [
+    {
+      "id": "ravioli",
+      "name": "Handmade Ravioli",
+      "description": "Hand-folded pasta filled with herb ricotta, bathed in pale cream sauce and garden nasturtium leaves.",
+      "imageId": "dish-ravioli",
+      "veg": true,
+      "vegan": false,
+      "note": "// TODO(owner): confirm exact preparation wording and ingredients"
+    },
+    {
+      "id": "kothimbir-kalari",
+      "name": "Kothimbir Kalari",
+      "description": "Artisanal Himalayan kalari cheese crisped golden, seasoned with crushed coriander seed and fresh garden herbs.",
+      "imageId": "dish-squash",
+      "veg": true,
+      "vegan": false,
+      "note": "// TODO(owner): confirm dish description and recipe highlights"
+    },
+    {
+      "id": "guacamole",
+      "name": "Stacked Guacamole Tower",
+      "description": "Hass avocado whipped with lime and cilantro, layered with heirloom tomatoes and crisp seeded tostadas.",
+      "imageId": "dish-guacamole",
+      "veg": true,
+      "vegan": true,
+      "note": "// TODO(owner): confirm toast/tostada pairing"
+    },
+    {
+      "id": "squash",
+      "name": "Slow-Roasted Squash",
+      "description": "Tender spiced butternut squash glazed with botanical herb emulsion and toasted pumpkin seeds.",
+      "imageId": "dish-squash",
+      "veg": true,
+      "vegan": true,
+      "note": "// TODO(owner): confirm seasonal squash variant"
+    },
+    {
+      "id": "entremet",
+      "name": "Chocolate Strawberry Entremet",
+      "description": "Glossy dark cocoa glaze enveloping single-origin chocolate mousse, fresh Mahabaleshwar strawberries and crisp crumb.",
+      "imageId": "dish-entremet",
+      "veg": true,
+      "vegan": false,
+      "note": "// TODO(owner): confirm pastry chef notes"
+    },
+    {
+      "id": "cheesecake",
+      "name": "Cookie Dough Cheesecake",
+      "description": "Slow-baked dense cheesecake ribboned with brown butter chocolate chip cookie dough on a toasted oat crust.",
+      "imageId": "dish-cheesecake",
+      "veg": true,
+      "vegan": false,
+      "note": "// TODO(owner): confirm bakehouse specials"
+    }
+  ]
+}

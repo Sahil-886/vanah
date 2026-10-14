@@ -1,26 +1,247 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --limewash: #F3EFE6;
+  --plaster: #E8E1D3;
+  --oat: #D6C8B0;
+  --sage: #4D5A4C;
+  --sage-deep: #3A4539;
+  --leaf: #6F7F5E;
+  --wood: #8B5E3C;
+  --crema: #B08A64;
+  --ink: #1F211D;
+  --ink-soft: #5C5F57;
+  --line: #EDE7DA;
+  --line-on-sage: #EDE7DA;
+  --shadow-warm: #4A3B22;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@theme {
+  --color-limewash: var(--limewash);
+  --color-plaster: var(--plaster);
+  --color-oat: var(--oat);
+  --color-sage: var(--sage);
+  --color-sage-deep: var(--sage-deep);
+  --color-leaf: var(--leaf);
+  --color-wood: var(--wood);
+  --color-crema: var(--crema);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-cream: #EDE7DA;
+  --color-line-custom: #EDE7DA;
+  --color-shadow-warm: var(--shadow-warm);
+
+  --font-serif: var(--font-newsreader), var(--font-gambetta), Georgia, serif;
+  --font-sans: var(--font-hanken), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-devanagari: var(--font-tiro), var(--font-serif), serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Explicit color utility classes for guaranteed cross-browser rendering */
+.text-line {
+  color: #EDE7DA !important;
+}
+.text-cream {
+  color: #FAF6EE !important;
+}
+.bg-line {
+  background-color: #EDE7DA !important;
+}
+.border-line {
+  border-color: #EDE7DA !important;
+}
+
+/* Base Body Styles */
+html {
+  -webkit-text-size-adjust: 100%;
+  color-scheme: light;
+  scroll-behavior: smooth;
+  scroll-padding-top: 64px;
+  background-color: var(--limewash);
+  color: var(--ink);
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+/* Prevent auto-zoom on iOS inputs and textareas */
+input, select, textarea {
+  font-size: 16px;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--limewash);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: clamp(15px, 0.25vw + 14px, 16px);
+  line-height: 1.58;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  max-width: 100%;
+  /* Lime-wash wall texture (tiled 700px) layered with fine grain (tiled 220px) */
+  background-image: 
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 220 220' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='grain'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .2 0 0 0 0 .18 0 0 0 0 .14 0 0 0 .9 -.4'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23grain)' opacity='0.08'/%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 700 700' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.0045' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .45 0 0 0 0 .40 0 0 0 0 .31 0 0 0 .55 -.18'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.22'/%3E%3C/svg%3E");
+  background-size: 220px 220px, 700px 700px;
+}
+
+/* Focus Rings */
+:focus-visible {
+  outline: 2px solid var(--wood);
+  outline-offset: 3px;
+}
+
+/* Typography Enhancements */
+h1, h2 {
+  font-family: var(--font-serif);
+  font-weight: 350;
+  letter-spacing: -0.018em;
+  text-wrap: balance;
+}
+
+h3, h4 {
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+/* Texture Utilities */
+.texture-linen {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 300 300' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='linen'%3E%3CfeTurbulence baseFrequency='.9 .03' result='t1'/%3E%3CfeTurbulence baseFrequency='.03 .9' result='t2'/%3E%3CfeBlend in='t1' in2='t2' mode='multiply' result='blend'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1 .66'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23linen)' opacity='0.09'/%3E%3C/svg%3E");
+  background-size: 300px 300px;
+}
+
+.texture-marble {
+  background-color: #ECE8E1;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 1200 900' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='marble'%3E%3CfeTurbulence baseFrequency='.0022 .0075' numOctaves='5' result='turb'/%3E%3CfeColorMatrix in='turb' values='0 0 0 0 .5 0 0 0 0 .5 0 0 0 0 .48 1.7 0 0 0 -.66' result='col'/%3E%3CfeComponentTransfer in='col'%3E%3CfeFuncA type='table' tableValues='0 0 .42 0 0 .22 0 0'/%3E%3C/feComponentTransfer%3E%3C/filter%3E%3Crect width='100%25' height='100%25' fill='%23ECE8E1'/%3E%3Crect width='100%25' height='100%25' filter='url(%23marble)' opacity='0.65'/%3E%3C/svg%3E");
+  background-size: 1200px 900px;
+}
+
+/* Roofline Hip Roof Clip-Paths */
+.clip-roofline {
+  clip-path: polygon(0 40px, 26% 0, 74% 0, 100% 40px, 100% 100%, 0 100%);
+}
+
+@media (min-width: 768px) {
+  .clip-roofline {
+    clip-path: polygon(0 76px, 26% 0, 74% 0, 100% 76px, 100% 100%, 0 100%);
+  }
+}
+
+/* Botanical Leaf Sway Keyframes — Pivots outside top edge (Section 3 & 4.5) */
+@keyframes leafSway1 {
+  0% {
+    transform: rotate(-1.7deg) scale(1);
+  }
+  100% {
+    transform: rotate(1.7deg) scale(1.012);
+  }
+}
+
+@keyframes leafSway2 {
+  0% {
+    transform: rotate(1.7deg) scale(1.012);
+  }
+  100% {
+    transform: rotate(-1.7deg) scale(1);
+  }
+}
+
+@keyframes leafSway3 {
+  0% {
+    transform: rotate(-1.3deg) scale(1.006);
+  }
+  100% {
+    transform: rotate(1.3deg) scale(1);
+  }
+}
+
+.animate-leaf-sway-1 {
+  transform-origin: 50% -55%;
+  animation: leafSway1 11s ease-in-out infinite alternate;
+}
+
+.animate-leaf-sway-2 {
+  transform-origin: 50% -55%;
+  animation: leafSway2 13s ease-in-out infinite alternate -4s;
+}
+
+.animate-leaf-sway-3 {
+  transform-origin: 50% -55%;
+  animation: leafSway3 17s ease-in-out infinite alternate -8s;
+}
+
+/* Line-art Draw-on Animation Rules */
+.motion .d path,
+.motion .d line,
+.motion .d polyline,
+.motion .d polygon {
+  stroke-dasharray: 1 1;
+  stroke-dashoffset: 1;
+  transition: stroke-dashoffset var(--t, 1s) cubic-bezier(.5, .05, .25, 1) var(--d, 0s);
+}
+
+.motion .on .d path,
+.motion .on .d line,
+.motion .on .d polyline,
+.motion .on .d polygon {
+  stroke-dashoffset: 0;
+}
+
+/* Fade and Rise Section Transitions */
+.reveal-init {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1.1s cubic-bezier(0.16, 1, 0.3, 1), transform 1.1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Text link underline draw on hover */
+.text-link-draw {
+  position: relative;
+  text-decoration: none;
+}
+
+.text-link-draw::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0%;
+  height: 1px;
+  background-color: currentColor;
+  transition: width 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.text-link-draw:hover::after {
+  width: 100%;
+}
+
+/* Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-leaf-sway-1,
+  .animate-leaf-sway-2,
+  .animate-leaf-sway-3 {
+    animation: none !important;
+    transform: none !important;
+  }
+
+  .motion .d path,
+  .motion .d line,
+  .motion .d polyline,
+  .motion .d polygon {
+    stroke-dashoffset: 0 !important;
+    transition: none !important;
+  }
+
+  .reveal-init {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
 }

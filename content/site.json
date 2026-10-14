@@ -1,0 +1,39 @@
+{
+  "name": "Café Vanah",
+  "wordmark": "वनः",
+  "tagline": "Crafted Coffee · Artisanal Bakehouse · Conscious Dining",
+  "heroLead": "Crafted coffee, an artisanal bakehouse and conscious dining.",
+  "address": {
+    "full": "11B, Silver Oak Park, Baner–Aundh Road, Sanewadi, Aundh, Pune, Maharashtra 411069",
+    "short": "BANER–AUNDH ROAD, PUNE",
+    "mapsUrl": "https://maps.google.com/?q=11B,+Silver+Oak+Park,+Baner–Aundh+Road,+Sanewadi,+Aundh,+Pune,+Maharashtra+411069"
+  },
+  "hours": {
+    "display": "Open daily, 8:00 AM – 10:00 PM",
+    "short": "OPEN DAILY 8 AM – 10 PM",
+    "bakehouseOpen": "8:00 AM",
+    "close": "10:00 PM"
+  },
+  "contact": {
+    "phone": "+91 91455 61515",
+    "phoneRaw": "+919145561515",
+    "whatsappUrl": "https://wa.me/919145561515?text="
+  },
+  "social": {
+    "instagramHandle": "@cafevanah",
+    "instagramUrl": "https://instagram.com/cafevanah"
+  },
+  "ordering": {
+    "airmenusUrl": "https://airmenus.in/cafevanah"
+  },
+  "google": {
+    "rating": "4.7",
+    "reviewsCount": "~1,500",
+    "url": "https://maps.google.com/?q=Cafe+Vanah+Aundh+Pune"
+  },
+  "reservation": {
+    "mode": "whatsapp",
+    "note": "// TODO(owner): confirm whether +91 91455 61515 is on WhatsApp and how reservations should be routed (whatsapp, phone, external)"
+  },
+  "pureVegetarian": true
+}
