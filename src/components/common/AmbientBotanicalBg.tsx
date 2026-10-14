@@ -11,10 +11,10 @@ export const AmbientBotanicalBg: React.FC = () => {
   return (
     <div
       aria-hidden="true"
-      className="fixed inset-0 pointer-events-none z-0 overflow-hidden select-none opacity-40 mix-blend-multiply"
+      className="fixed inset-0 pointer-events-none z-0 overflow-hidden select-none"
     >
       {/* Top-Right Swaying Branch Silhouette */}
-      <div className="absolute -top-16 -right-16 w-[550px] sm:w-[720px] h-[550px] sm:h-[720px] animate-leaf-sway-1 opacity-[0.06] text-[#3D3220]">
+      <div className="absolute -top-16 -right-16 w-[550px] sm:w-[720px] h-[550px] sm:h-[720px] animate-leaf-sway-1 opacity-[0.035] text-[#3D3220] will-change-transform transform-gpu">
         <svg
           viewBox="0 0 600 600"
           fill="currentColor"
@@ -34,7 +34,7 @@ export const AmbientBotanicalBg: React.FC = () => {
       </div>
 
       {/* Bottom-Left Gentle Foliage Silhouette */}
-      <div className="absolute -bottom-24 -left-20 w-[450px] sm:w-[600px] h-[450px] sm:h-[600px] animate-leaf-sway-2 opacity-[0.05] text-[#3D3220]">
+      <div className="absolute -bottom-24 -left-20 w-[450px] sm:w-[600px] h-[450px] sm:h-[600px] animate-leaf-sway-2 opacity-[0.03] text-[#3D3220] will-change-transform transform-gpu">
         <svg
           viewBox="0 0 500 500"
           fill="currentColor"

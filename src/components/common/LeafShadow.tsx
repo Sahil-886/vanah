@@ -22,11 +22,11 @@ export const LeafShadow: React.FC<LeafShadowProps> = ({
   return (
     <div
       aria-hidden="true"
-      className={`pointer-events-none absolute inset-0 overflow-hidden mix-blend-multiply select-none z-10 ${className}`}
+      className={`pointer-events-none absolute inset-0 overflow-hidden mix-blend-multiply select-none z-10 isolate ${className}`}
     >
       <div className="relative w-full h-full">
         {/* Layer 1 — Frangipani Clusters (Foreground canopy, 7px blur, 11s sway) */}
-        <div className="absolute -top-12 -left-8 right-0 h-[115%] animate-leaf-sway-1 opacity-[0.11]">
+        <div className="absolute -top-12 -left-8 right-0 h-[115%] animate-leaf-sway-1 opacity-[0.11] will-change-transform transform-gpu">
           <svg
             viewBox="0 0 1440 900"
             fill="none"
@@ -77,7 +77,7 @@ export const LeafShadow: React.FC<LeafShadowProps> = ({
         </div>
 
         {/* Layer 2 — Ficus Tree Leaves (Midground canopy with drip tips, 10px blur, 14s sway) */}
-        <div className="absolute -top-16 left-0 right-0 h-[120%] animate-leaf-sway-2 opacity-[0.10]">
+        <div className="absolute -top-16 left-0 right-0 h-[120%] animate-leaf-sway-2 opacity-[0.10] will-change-transform transform-gpu">
           <svg
             viewBox="0 0 1440 900"
             fill="none"
@@ -111,7 +111,7 @@ export const LeafShadow: React.FC<LeafShadowProps> = ({
         </div>
 
         {/* Layer 3 — Delicate Fern Frond (Deep canopy edge, 14px blur, 17s sway) */}
-        <div className="absolute -top-8 -right-12 h-[120%] w-[80%] animate-leaf-sway-3 opacity-[0.09]">
+        <div className="absolute -top-8 -right-12 h-[120%] w-[80%] animate-leaf-sway-3 opacity-[0.09] will-change-transform transform-gpu">
           <svg
             viewBox="0 0 1000 800"
             fill="none"

@@ -114,7 +114,7 @@ p {
 
 .texture-marble {
   background-color: #ECE8E1;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 1200 900' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='marble'%3E%3CfeTurbulence baseFrequency='.0022 .0075' numOctaves='5' result='turb'/%3E%3CfeColorMatrix in='turb' values='0 0 0 0 .5 0 0 0 0 .5 0 0 0 0 .48 1.7 0 0 0 -.66' result='col'/%3E%3CfeComponentTransfer in='col'%3E%3CfeFuncA type='table' tableValues='0 0 .42 0 0 .22 0 0'/%3E%3C/feComponentTransfer%3E%3C/filter%3E%3Crect width='100%25' height='100%25' fill='%23ECE8E1'/%3E%3Crect width='100%25' height='100%25' filter='url(%23marble)' opacity='0.65'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 1200 900' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='marble'%3E%3CfeTurbulence baseFrequency='.0022 .0075' numOctaves='2' result='turb'/%3E%3CfeColorMatrix in='turb' values='0 0 0 0 .5 0 0 0 0 .5 0 0 0 0 .48 1.7 0 0 0 -.66' result='col'/%3E%3CfeComponentTransfer in='col'%3E%3CfeFuncA type='table' tableValues='0 0 .42 0 0 .22 0 0'/%3E%3C/feComponentTransfer%3E%3C/filter%3E%3Crect width='100%25' height='100%25' fill='%23ECE8E1'/%3E%3Crect width='100%25' height='100%25' filter='url(%23marble)' opacity='0.65'/%3E%3C/svg%3E");
   background-size: 1200px 900px;
 }
 
@@ -159,16 +159,19 @@ p {
 
 .animate-leaf-sway-1 {
   transform-origin: 50% -55%;
+  will-change: transform;
   animation: leafSway1 11s ease-in-out infinite alternate;
 }
 
 .animate-leaf-sway-2 {
   transform-origin: 50% -55%;
+  will-change: transform;
   animation: leafSway2 13s ease-in-out infinite alternate -4s;
 }
 
 .animate-leaf-sway-3 {
   transform-origin: 50% -55%;
+  will-change: transform;
   animation: leafSway3 17s ease-in-out infinite alternate -8s;
 }
 
